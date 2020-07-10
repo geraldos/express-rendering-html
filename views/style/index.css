@@ -1,3 +1,31 @@
 h1 {
-    color: aquamarine;
+    padding: 100px;
+    text-align: center;
+}
+
+h2 {
+    padding: 25px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.value {
+    display: flex;
+    justify-content: center;
+}
+
+.values {
+    padding: 5px;
+    text-align: center;
+    color: crimson;
+}
+
+.buttons {
+    padding: 10px;
+    display: flex;
+    justify-items: center;
 }

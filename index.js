@@ -4,15 +4,19 @@ const app = express();
 const PORT = process.env.PORT || 5004;
 const path = require("path");
 
-app.get("/", (req, res) => {
-    res.send("Hello");
-});
-
 //Read External File
 app.use(express.static("views"));
 
-app.get("/products", (req, res) => {
-    res.sendFile(path.join(__dirname + "/views/products.html"));
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname + "/views/index.html"));
+});
+
+app.get("/home", (req, res) => {
+    res.sendFile(path.join(__dirname + "/views/home.html"));
+});
+
+app.get("/about", (req, res) => {
+    res.sendFile(path.join(__dirname + "/views/about.html"));
 });
 
 app.listen(PORT, () => {
